@@ -1,5 +1,8 @@
 name: deploy to gh-pages
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
 
 env:
   HUSKY: 0
@@ -8,6 +11,8 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
