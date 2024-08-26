@@ -17,6 +17,7 @@ const config = defineConfig({
       "~/": `${root}/`,
     },
   },
+  base: "/tt-pages/",
   root,
   envDir: process.cwd(),
   publicDir: `${process.cwd()}/public`,
