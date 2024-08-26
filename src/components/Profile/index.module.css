@@ -1,0 +1,15 @@
+.name {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+  }
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10000px;
+  }
+}
